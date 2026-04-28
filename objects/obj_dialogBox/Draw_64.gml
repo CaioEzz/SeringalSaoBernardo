@@ -6,8 +6,7 @@ draw_rectangle(64-stretchLerp,500-stretchLerp/2,1302+stretchLerp,680+stretchLerp
 
 draw_set_colour(c_white);
 draw_set_alpha(1);
-
-// texto parcial (letra por letra)
+z
 var currentText = textArray[textArrayIndex];
 var visibleText = string_copy(currentText, 1, charIndex);
 
