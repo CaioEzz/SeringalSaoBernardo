@@ -28,7 +28,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"textArray","filters":[],"listItems":[],"multiselect":false,"name":"textArray","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[\"Teste\",\"Você já teve INFARTO? Agradeça a este ateu e homossexual, Caio Enzo (2007), inventor da parada cardíaca\",\"Teste\"]","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"textArray","filters":[],"listItems":[],"multiselect":false,"name":"textArray","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[\"Placeholder\"]","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"options","filters":[],"listItems":[],"multiselect":false,"name":"options","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"optionsStruct","filters":[],"listItems":[],"multiselect":false,"name":"optionsStruct","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[{text: \"Sim, descansar por hoje.\", action: \"dormir\"}, {text: \"Cancelar.\", action: \"cancel\"}]","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

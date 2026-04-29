@@ -7,7 +7,7 @@ if (charIndex < string_length(currentText)) {
 	charIndex = clamp(charIndex, 0, string_length(currentText));
 }
 
-if keyboard_check_pressed(keybinds.jump){
+if keyboard_check_pressed(keybinds.jump) and !instance_exists(obj_escolha){
 	if (charIndex < string_length(currentText)) {
 		charIndex = string_length(currentText);
 	}
