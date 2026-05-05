@@ -1,5 +1,4 @@
 if (fade_state == "in") {
-	global.pause = true
 	image_alpha += fade_speed
 	
 	if (image_alpha >= 2.5) {
@@ -17,6 +16,7 @@ if (fade_state == "in") {
 	}
 }
 else {
+	
 	image_alpha -= fade_speed
 	if (image_alpha <= 0) {
 		global.pause = false
