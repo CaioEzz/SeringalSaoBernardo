@@ -33,6 +33,7 @@
     {"link":"io.gamemaker.gm_filter_vignette-1.0.0","name":"io.gamemaker.gm_filter_vignette-1.0.0","path":"io.gamemaker.gm_filter_vignette-1.0.0.yyp",},
     {"link":"io.gamemaker.gm_filter_colour_balance-1.0.0","name":"io.gamemaker.gm_filter_colour_balance-1.0.0","path":"io.gamemaker.gm_filter_colour_balance-1.0.0.yyp",},
     {"link":"io.gamemaker.gm_filter_colourise-1.0.0","name":"io.gamemaker.gm_filter_colourise-1.0.0","path":"io.gamemaker.gm_filter_colourise-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_tintfilter-1.0.0","name":"io.gamemaker.gm_filter_tintfilter-1.0.0","path":"io.gamemaker.gm_filter_tintfilter-1.0.0.yyp",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
@@ -58,8 +59,8 @@
     {"id":{"name":"obj_smoke","path":"objects/obj_smoke/obj_smoke.yy",},},
     {"id":{"name":"obj_teleporte","path":"objects/obj_teleporte/obj_teleporte.yy",},},
     {"id":{"name":"obj_transicaoDormir","path":"objects/obj_transicaoDormir/obj_transicaoDormir.yy",},},
-    {"id":{"name":"rm_seringal_1","path":"rooms/rm_seringal_1/rm_seringal_1.yy",},},
     {"id":{"name":"rm_seringal","path":"rooms/rm_seringal/rm_seringal.yy",},},
+    {"id":{"name":"rm_trajetoSeringalSeringueiras","path":"rooms/rm_trajetoSeringalSeringueiras/rm_trajetoSeringalSeringueiras.yy",},},
     {"id":{"name":"scr_Binds","path":"scripts/scr_Binds/scr_Binds.yy",},},
     {"id":{"name":"scr_Dialogo","path":"scripts/scr_Dialogo/scr_Dialogo.yy",},},
     {"id":{"name":"scr_Particulas","path":"scripts/scr_Particulas/scr_Particulas.yy",},},
@@ -95,7 +96,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_seringal","path":"rooms/rm_seringal/rm_seringal.yy",},},
-    {"roomId":{"name":"rm_seringal_1","path":"rooms/rm_seringal_1/rm_seringal_1.yy",},},
+    {"roomId":{"name":"rm_trajetoSeringalSeringueiras","path":"rooms/rm_trajetoSeringalSeringueiras/rm_trajetoSeringalSeringueiras.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
