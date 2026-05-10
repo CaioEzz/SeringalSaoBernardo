@@ -4,4 +4,4 @@ textArrayIndex = 0
 stretchLerp = 64
 
 charIndex = 0     
-textSpeed = 1      
+textSpeed = 1 

@@ -135,8 +135,8 @@ fomePerc = power(fomePerc, 1.5)
 var walkMin = 0.4
 var walkMax = 1.0
 
-var runMin = 0.8
-var runMax = 1.67
+var runMin = 0.6
+var runMax = 1.4
 
 var walkSpeed = lerp(walkMin, walkMax, fomePerc)
 var runSpeed  = lerp(runMin, runMax, fomePerc)

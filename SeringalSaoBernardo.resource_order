@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_interacoes","order":1,"path":"fonts/fnt_interacoes/fnt_interacoes.yy",},
+    {"name":"obj_coleta","order":2,"path":"objects/obj_coleta/obj_coleta.yy",},
     {"name":"obj_colisor","order":3,"path":"objects/obj_colisor/obj_colisor.yy",},
     {"name":"obj_dialogBox","order":4,"path":"objects/obj_dialogBox/obj_dialogBox.yy",},
     {"name":"obj_escolha","order":5,"path":"objects/obj_escolha/obj_escolha.yy",},
@@ -35,6 +36,7 @@
     {"name":"snd_ambiente","order":3,"path":"sounds/snd_ambiente/snd_ambiente.yy",},
     {"name":"snd_arara2","order":1,"path":"sounds/snd_arara2/snd_arara2.yy",},
     {"name":"snd_araraVoando","order":2,"path":"sounds/snd_araraVoando/snd_araraVoando.yy",},
+    {"name":"snd_equipe","order":5,"path":"sounds/snd_equipe/snd_equipe.yy",},
     {"name":"snd_heartbeat","order":4,"path":"sounds/snd_heartbeat/snd_heartbeat.yy",},
     {"name":"spr_araraParada","order":4,"path":"sprites/spr_araraParada/spr_araraParada.yy",},
     {"name":"spr_araraVoando","order":3,"path":"sprites/spr_araraVoando/spr_araraVoando.yy",},
@@ -49,6 +51,7 @@
     {"name":"spr_jogadorParado","order":1,"path":"sprites/spr_jogadorParado/spr_jogadorParado.yy",},
     {"name":"spr_jogadorPulando","order":2,"path":"sprites/spr_jogadorPulando/spr_jogadorPulando.yy",},
     {"name":"spr_noite","order":1,"path":"sprites/spr_noite/spr_noite.yy",},
+    {"name":"spr_particulaLatex","order":6,"path":"sprites/spr_particulaLatex/spr_particulaLatex.yy",},
     {"name":"spr_seringueira","order":3,"path":"sprites/spr_seringueira/spr_seringueira.yy",},
     {"name":"spr_tileset","order":2,"path":"sprites/spr_tileset/spr_tileset.yy",},
     {"name":"spr_vegetacao","order":1,"path":"sprites/spr_vegetacao/spr_vegetacao.yy",},

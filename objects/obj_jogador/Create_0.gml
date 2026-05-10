@@ -25,3 +25,6 @@ global.energia = 20
 global.fomeMax = 20
 global.fome = 20
 
+depth = 400
+
+instance_create_depth(56,72,depth,obj_hud)
