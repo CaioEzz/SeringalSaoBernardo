@@ -24,7 +24,7 @@ switch state{
 	break
 }
 
-if (distancia < 40 && cima) {
+if (distancia < 40 && cima) and !instance_exists(obj_dialogBox){
     dialogo()
 }
 

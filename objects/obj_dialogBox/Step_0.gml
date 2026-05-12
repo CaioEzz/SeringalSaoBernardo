@@ -2,9 +2,20 @@ keybinds = scr_getBinds();
 
 var currentText = textArray[textArrayIndex];
 
+var oldCharIndex = floor(charIndex);
+
 if (charIndex < string_length(currentText)) {
 	charIndex += textSpeed;
+	audio_stop_sound(snd_menuHover)
+	audio_play_sound(snd_menuHover,2,0)
 	charIndex = clamp(charIndex, 0, string_length(currentText));
+}
+
+var newCharIndex = floor(charIndex);
+
+if (newCharIndex > oldCharIndex)
+{
+	audio_play_sound(voz, 1, false,,,random_range(0.9,1.4));
 }
 
 if keyboard_check_pressed(keybinds.jump) and !instance_exists(obj_escolha){
@@ -17,8 +28,8 @@ if keyboard_check_pressed(keybinds.jump) and !instance_exists(obj_escolha){
 			instance_destroy();
 		} else {
 			stretchLerp = 64;
-			textArrayIndex += 1
-			charIndex = 0
+			textArrayIndex += 1;
+			charIndex = 0;
 		}
 	}
 }

@@ -1,5 +1,8 @@
 var caller = caixaPai.caller;
 
+audio_stop_sound(snd_menuConfirm)
+audio_play_sound(snd_menuConfirm,2,0)
+
 instance_destroy(caixaPai)
 global.pause = false
 

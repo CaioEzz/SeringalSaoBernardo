@@ -30,7 +30,6 @@
     {"name":"inst_7BD193FA","path":"rooms/rm_seringal/rm_seringal.yy",},
     {"name":"inst_5AF9D310","path":"rooms/rm_seringal/rm_seringal.yy",},
     {"name":"inst_27A9F734","path":"rooms/rm_seringal/rm_seringal.yy",},
-    {"name":"inst_41889E2","path":"rooms/rm_seringal/rm_seringal.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -83,7 +82,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_teleporte","path":"objects/obj_teleporte/obj_teleporte.yy",},"propertyId":{"name":"xx","path":"objects/obj_teleporte/obj_teleporte.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"64",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_teleporte","path":"objects/obj_teleporte/obj_teleporte.yy",},"propertyId":{"name":"yy","path":"objects/obj_teleporte/obj_teleporte.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"512",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":13.0,"x":1888.0,"y":416.0,},
-        {"$GMRInstance":"v4","%Name":"inst_41889E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41889E2","objectId":{"name":"obj_coleta","path":"objects/obj_coleta/obj_coleta.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":448.0,},
       ],"layers":[],"name":"lay_instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"lay_assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_67CFB21A","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_67CFB21A","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":30.0,"scaleY":1.171875,"spriteId":{"name":"spr_grama","path":"sprites/spr_grama/spr_grama.yy",},"x":960.0,"y":553.0,},

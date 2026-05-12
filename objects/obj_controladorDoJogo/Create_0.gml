@@ -22,8 +22,10 @@ scr_setBinds(keybinds)
 // Outrás variáveis =======================================================
 // Alguns exemplos para cá são a câmera ser estática ou não e outras coisas
 
-larguraCam = camera_get_view_width(view_camera[0])
-alturaCam = camera_get_view_height(view_camera[0])
+larguraCam = 1152
+alturaCam = 648
+larguraCamAlvo = 1152
+alturaCamAlvo = 648
 alvoCam = obj_jogador
 global.cameraEstatica = false
 display_reset(0, true);

@@ -2,10 +2,14 @@ keybinds = scr_getBinds()
 
 if keyboard_check_pressed(keybinds.up){
 	selectedOption = optionsStruct[0]
+	audio_stop_sound(snd_menuHover)
+	audio_play_sound(snd_menuHover,2,0)
 }
 
 if keyboard_check_pressed(keybinds.down){
 	selectedOption = optionsStruct[1]
+	audio_stop_sound(snd_menuHover)
+	audio_play_sound(snd_menuHover,2,0)
 }
 
 if alarm[0] <= 0{
