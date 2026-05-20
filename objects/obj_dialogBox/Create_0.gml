@@ -1,4 +1,6 @@
 global.pause = true
+obj_jogador.inputX = 0
+obj_jogador.speed = 0
 textArrayIndex = 0
 
 stretchLerp = 64

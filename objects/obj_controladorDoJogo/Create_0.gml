@@ -9,13 +9,13 @@ global.debugMode = true
 // mas por padrão segue os valores dentro do codigo abaixo
 
 var keybinds = {
-	right: vk_right,
-	left: vk_left,
-	down: vk_down,
-	up: vk_up,
-	jump: ord("Z"),
-	run: ord("X")
-}
+	right: ord("D"),
+	left: ord("A"),
+	down: ord("S"),
+	up: ord("W"),
+	jump: vk_space,
+	run: vk_shift
+};
 
 scr_setBinds(keybinds)
 
@@ -35,3 +35,6 @@ global.transitionY = 0
 global.daytime = "dia"
 global.pause = false
 draw_set_font(fnt_hud)
+
+global.inventario = [[0,0],[0,0],[0,0],[0,0]]
+

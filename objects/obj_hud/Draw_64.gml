@@ -7,8 +7,15 @@ if global.pause = false{
 
 	draw_set_font(fnt_hud)
 
-	if device_mouse_x_to_gui(0) < 480 and device_mouse_y_to_gui(0) < 110{
-		var texto = $"Saúde: {global.saude}/{global.saudeMax}\nEnergia: {global.energia}/{global.energiaMax}\nFome: {global.fome}/{global.fomeMax}"
-		draw_text(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),texto)
+	if device_mouse_x_to_gui(0) < 480 && device_mouse_y_to_gui(0) < 110{
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top)
+	draw_text(
+		device_mouse_x_to_gui(0),
+		device_mouse_y_to_gui(0),
+		"Saúde: "  + string(round(clamp(global.saude,   0, global.saudeMax)))   + "/" + string(round(global.saudeMax))   + "\n" +
+		"Energia: "+ string(round(clamp(global.energia, 0, global.energiaMax))) + "/" + string(round(global.energiaMax)) + "\n" +
+		"Fome: "   + string(round(clamp(global.fome,    0, global.fomeMax)))    + "/" + string(round(global.fomeMax))
+	);
 	}
 }
