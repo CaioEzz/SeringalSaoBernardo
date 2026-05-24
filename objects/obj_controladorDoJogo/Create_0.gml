@@ -1,3 +1,4 @@
+application_surface_draw_enable(false)
 // Debug mode =====================================================================================
 // Essa variável é usada em vários lugares como um modo de debugar o jogo, Obviamente vai estar desligada 
 // no jogo final, mas será útil pra testes aqui
@@ -41,5 +42,5 @@ global.transitionY = 0
 global.pause = false
 draw_set_font(fnt_hud)
 
-global.inventario = [[3,1],[1,3],[0,0],[0,0]]
+global.inventario = [[3,1],[1,3],[5,1],[0,0]]
 

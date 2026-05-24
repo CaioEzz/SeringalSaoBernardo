@@ -35,6 +35,24 @@ function scr_getItem(_id){
                 descricao: "Ferramenta utilizada para cortar a casa das seringueiras."
             };
 			break;
+			
+		case 4:
+            return {
+                nome: "Poronga",
+                sprite: spr_item,
+                frame: 3,
+                descricao: "Pode ser colocada na cabeça para iluminar o caminho, mas está vazia."
+            };
+			break;
+			
+		case 5:
+            return {
+                nome: "Poronga acessa",
+                sprite: spr_item,
+                frame: 4,
+                descricao: "Coloque na cabeça para iluminar. Se esgota com o tempo."
+            };
+			break;
     }
 
     return undefined;

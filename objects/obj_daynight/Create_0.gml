@@ -13,7 +13,7 @@ intensidade = 1;
 
 intensidade_overlay = 0
 
-global.hora = 4
+global.hora = 20
 global.minuto = 0
 
 lutId = lutmadrugada;
@@ -24,4 +24,7 @@ intensidade = intensidade_max;
 
 trocando_lut = false;
 velocidade_transicao = 0.01
+
+lutAtual = lutdia;
+lutProxima = lutdia;
 

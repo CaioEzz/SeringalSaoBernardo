@@ -1,10 +1,11 @@
-global.minuto += 0.5
-if global.minuto = 60{
-	global.hora += 1
-	global.minuto = 0
+global.minuto += 1;
+
+if (global.minuto >= 60) {
+    global.hora += 1;
+    global.minuto = 0;
 }
 
-if (global.hora > 23) {
+if (global.hora >= 24) {
     global.hora = 0;
 }
 
@@ -13,46 +14,64 @@ if (instance_exists(obj_jogador)) {
     y = obj_jogador.y;
 }
 
+
+// Escolha da LUT
 if (global.hora >= 6 && global.hora <= 15) {
+	image_xscale = 1
+	image_yscale = 1
     lutId_alvo = lutdia;
-	image_alpha = lerp(image_alpha,0,0.01)
+    image_alpha = lerp(image_alpha, 0, 0.01);
+	intensity = 0
+	radius = 256
 }
-else if (global.hora >= 16 && global.hora <= 19) {
+else if (global.hora >= 16 && global.hora <= 17) {
     lutId_alvo = lutentardecer;
-	image_alpha = lerp(image_alpha,0.5,0.01)
+    image_alpha = lerp(image_alpha, 0.3, 0.01);
+	intensity = 0
+	radius = 256
 }
-else if (global.hora >= 20 || global.hora <= 1) {
+else if (global.hora >= 18 || global.hora <= 2) {
     lutId_alvo = lutnoite;
-	image_alpha = lerp(image_alpha,1.2,0.01)
+    image_alpha = lerp(image_alpha, 1, 0.01);
+	if scr_buscarItem(5) != noone{
+		intensity = random_range(2.8,3.2)
+		radius = 769
+		color = make_color_rgb(255,100,0)
+		image_xscale = lerp(image_xscale,intensity - .5,0.1)
+		image_yscale = lerp(image_yscale,intensity - .5,0.1)
+	}else{
+		radius = 256
+		intensity = 0.2
+		image_xscale = 1
+		image_yscale = 1
+		color = c_white
+	}
 }
-else { 
-	image_alpha = lerp(image_alpha,0.8,0.01)
+else {
+	if scr_buscarItem(5) != noone{
+		intensity = random_range(0.5,0.7)
+		radius = 256
+		color = make_color_rgb(255,100,0)
+		image_xscale = 1
+		image_yscale = 1
+	}else{
+		radius = 256
+		intensity = 0.2
+		image_xscale = 1
+		image_yscale = 1
+		color = c_white
+	}
     lutId_alvo = lutmadrugada;
+    image_alpha = lerp(image_alpha, 0.5, 0.01);
 }
 
-// Inicia transição quando a LUT desejada mudar
-if (lutId != lutId_alvo && !trocando_lut) {
-    trocando_lut = true;
+// Troca somente quando necessário
+if (lutId != lutId_alvo) {
+    lutId = lutId_alvo;
 }
 
-// Fade-out
-if (trocando_lut) {
-    intensidade -= velocidade_transicao;
-
-    if (intensidade <= 0) {
-        intensidade = 0;
-        lutId = lutId_alvo;
-        trocando_lut = false;
-    }
-}
-// Fade-in
-else if (intensidade < intensidade_max) {
-    intensidade += velocidade_transicao;
-
-    if (intensidade > intensidade_max) {
-        intensidade = intensidade_max;
-    }
-}
+// Intensidade fixa
+intensidade = intensidade_max;
 
 var fx_struct = {
     g_LUTColourIntensity : intensidade,
@@ -61,4 +80,5 @@ var fx_struct = {
 
 fx_set_parameters(layer_get_fx("lay_lut"), fx_struct);
 
-show_debug_message($"Hora: {global.hora}")
+
+

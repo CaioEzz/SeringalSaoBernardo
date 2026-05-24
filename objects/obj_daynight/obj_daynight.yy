@@ -8,12 +8,20 @@
   ],
   "managed":true,
   "name":"obj_daynight",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"__cle_objPointLight","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"propertyId":{"name":"inner","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"__cle_objPointLight","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"propertyId":{"name":"levels","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"65536",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"__cle_objPointLight","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"propertyId":{"name":"castShadows","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"__cle_objPointLight","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"propertyId":{"name":"selfShadows","path":"objects/__cle_objPointLight/__cle_objPointLight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+  ],
   "parent":{
     "name":"Controle",
     "path":"folders/Objetos/Controle.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"__cle_objPointLight",
+    "path":"objects/__cle_objPointLight/__cle_objPointLight.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

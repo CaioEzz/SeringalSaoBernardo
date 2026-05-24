@@ -1,0 +1,1 @@
+renderer.Render(application_surface, view_get_camera(0));
