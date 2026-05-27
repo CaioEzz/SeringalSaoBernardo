@@ -10,8 +10,27 @@ var dialogo;
 switch state{
     case "sembalde":
         image_alpha = 0
-        dialogo = function(){ criar_dialogo(["É uma seringueira. Para extrair o látex, é necesário um balde.",""], true, [{text: "Colocar balde para coleta.", action: "colocarbalde"}, {text: "Cancelar", action: "cancel"}]) }
-    break;
+		if global.tutorial[0][0] == 0{
+			dialogo = function(){ criar_dialogo(["É uma seringueira. Para extrair o látex, é necesário um balde.",""], true, [{text: "Colocar balde para coleta.", action: "colocarbalde"}, {text: "Cancelar", action: "cancel"}]) }
+		}
+		else{
+			dialogo = function(){
+				if scr_buscarItem(1) != noone{
+					scr_buscarItem(1).animPlay = false
+					scr_removerItem(1, 1);
+				    state = "vazio"
+					audio_play_sound(snd_equipe,3,0)
+					image_xscale = random_range(1.5,2)
+					image_yscale = random_range(1.5,2)
+					image_angle = random_range(-60,60)
+				}
+			
+				else{
+					criar_dialogo(["Você não tem baldes com você."],0,{})
+				}
+			}
+		}
+	break;
 
 	case "corte":
 		dialogo = function(){}
@@ -20,12 +39,29 @@ switch state{
     case "vazio":
         image_alpha = 1
         image_index = 1
-        dialogo = function(){ criar_dialogo(["É uma seringueira, a árvore de onde o látex é extraído. Um pequeno corte é feito pra que possa escorrer de dentro pra fora. Deseja iniciar o processo?",""], true, [{text: "Sim, cortar um pedaço da casca.", action: "cortarcasca"}, {text: "Cancelar", action: "cancel"}]) }
-    break;
+		if global.tutorial[0][0] == 0{
+			dialogo = function(){ criar_dialogo(["É uma seringueira, a árvore de onde o látex é extraído. Um pequeno corte é feito pra que possa escorrer de dentro pra fora. Deseja iniciar o processo?",""], true, [{text: "Sim, cortar um pedaço da casca.", action: "cortarcasca"}, {text: "Cancelar", action: "cancel"}]) }
+		}
+		else{
+			dialogo = function(){
+				if scr_buscarItem(3) != noone{
+					scr_buscarItem(3).animPlay = false
+			        state = "corte"
+					alarm[0] = 2
+					image_xscale = random_range(1.5,2)
+					image_yscale = random_range(1.5,2)
+					image_angle = random_range(-60,60)
+				}
+				else{
+					criar_dialogo(["Você precisa de uma faca para cortar a casca."],0,{})
+				}
+			}
+		}
+	break;
 	
 	case "cheio":
 		image_index = 0
-		dialogo = function(){ scr_addItem(2,1) quantidade = 0 state = "sembalde"}
+		dialogo = function(){ scr_addItem(2,1) quantidade = 0 state = "sembalde" global.tutorial[0][0] = 1}
 	break
 }
 
